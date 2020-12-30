@@ -7,8 +7,8 @@ public static class Kata
   public static string HighAndLow(string numbers)
   {
     string[] subs = numbers.Split(' ');
-    int max = 0;
-    int min = 0;
+    int max = Int32.Parse(subs[0]);
+    int min = Int32.Parse(subs[0]);
     foreach (string i in subs){
       int result = Int32.Parse(i);
       if (Int32.Parse(i) > max){
